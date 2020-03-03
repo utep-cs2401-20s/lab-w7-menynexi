@@ -1,8 +1,9 @@
 public class SortOfSort{
-    public static int SortOfSortCount;
 
-    public void sortOfSort(int[] arr) {
-        SortOfSortCount = 0;
+
+
+    public static void sortOfSort(int[] arr) {
+        int SortOfSortCount = 0;
         int counterA = 2;
         int counterB = 2;
         int firstIndex = 0;
@@ -47,10 +48,16 @@ public class SortOfSort{
         }
     }
 
-    public void print(int[] arr) {
+    public  static void print(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
         System.out.println("");
     }
+
+    public static void main(String[] args){
+        int[] arr = {7, 8, 6, 9, 3};
+        //sortOfSort(arr);
+    }
+
 }
