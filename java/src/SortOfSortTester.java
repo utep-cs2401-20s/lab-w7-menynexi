@@ -49,5 +49,14 @@ public class SortOfSortTester {
         SortOfSort.sortOfSort(arr);
         assertArrayEquals(expectedArr, arr);
     }
+
+    @Test
+    public void test6(){ //if given an empty array it never runs
+        int[] arr = {7, 6, 3, 8, 9, 9, 9};
+        int[] expectedArr = {9, 8, 3, 6, 7, 9, 9};
+
+        SortOfSort.sortOfSort(arr);
+        assertArrayEquals(expectedArr, arr);
+    }
 }
 
