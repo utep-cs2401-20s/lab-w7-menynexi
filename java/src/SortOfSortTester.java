@@ -6,16 +6,16 @@ import static org.junit.Assert.assertEquals;
 public class SortOfSortTester {
 
     @Test
-    public void test1(){
+    public void test1(){//this was just a normal sample problem athat I used to construct and troubleshoot the sorting algorithm
         int[] arr = {7, 8, 6, 9, 3};
         int[] expectedArr = {7,6,3,8,9};
 
         SortOfSort.sortOfSort(arr);
-        assertArrayEquals(expectedArr, arr);
+        assertArrayEquals(expectedArr, arr);//I have to create a asserArrayEquals because if i do assertable it will compare the addresses which wont match
     }
 
     @Test
-    public void test2(){//checks if sorted does it do anything even if its sorted it still sorts it in place it still runs there no feature tat cheaks if it is sorted
+    public void test2(){//checks if given a sorted array does it still "sort it" I concluded that the answer is yes
         int[] arr = {7, 6, 3, 8, 9};
         int[] expectedArr = {7, 6, 3, 8, 9};
 
@@ -24,7 +24,7 @@ public class SortOfSortTester {
     }
 
     @Test
-    public void test3(){//checks negatives
+    public void test3(){//checks if given a negative set of integers does it still sorts it accordingly
         int[] arr = {-7, -8, -6, -9, -3};
         int[] expectedArr = {-7, -8, -9, -6, -3};
 
